@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rom&nd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #FA8072; /* Розовый фон */
+            color: #fff; /* Белый текст */
+        }
+        h1 {
+            margin-top: 20px;
+            color: #fff; /* Белый текст для заголовка */
+        }
+        .video-frame {
+            width: 100%; /* Видео на всю ширину */
+            border: 2px solid #CD5C5C; /* Рамка вокруг видео */
+            border-bottom: none; /* Без рамки снизу */
+            background-color: #CD5C5C;
+        }
+        .video-frame iframe {
+            width: 100%; /* Видео на всю ширину */
+            height: 400px; /* Высота видео */
+            border: none;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .frame {
+            width: 300px; /* Увеличенный размер рамки */
+            border: 2px solid #CD5C5C; /* Белая рамка */
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #CD5C5C;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .frame img {
+            width: 100%;
+            height: 300px; /* Увеличенная высота изображения */
+            object-fit: cover;
+        }
+        .frame .link-row {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .frame .link-row a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border: 1px solid #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .frame .link-row a:hover {
+            background-color: #fff;
+            color: #ffc0cb;
+        }
+        .side-bars {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 50px;
+            background-color: #CD5C5C;
+        }
+        .left-bar {
+            left: 0;
+        }
+        .right-bar {
+            right: 0;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .pagination a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .pagination a:hover {
+            background-color: #fff;
+            color: #ffc0cb;
+        }
+        .pagination .arrow {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Видео в верхней части страницы -->
+    <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/Ce2EMjjKKM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Белые вертикальные полосы -->
+    <div class="side-bars left-bar"></div>
+    <div class="side-bars right-bar"></div>
+
+    <h1><B>rom&nd</B></h1>
+    
+    <!-- Галерея -->
+    <div class="gallery">
+        <div class="frame">
+            <img src="https://avatars.mds.yandex.net/i?id=0a95ada18ca7f9249fdd27e42e0c5b14_l-9683181-images-thumbs&n=13" alt="Изображение 1">
+            <div class="link-row">
+                <a href="https://example.com" target="_blank">Добавить новый сайт</a>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="https://koreiskie-shtuchki.ru/wp-content/uploads/2023/11/ROM_ND_D-D-D-N-_D-DN-D-N-D-D-N-D-_D-DN-_D-N-D-_Dewyful_Water_Tint_13.Custard_Mauve.png" alt="Изображение 2">
+            <div class="link-row">
+                <a href="https://example.com" target="_blank">Добавить новый сайт</a>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="https://avatars.mds.yandex.net/i?id=f8bb30ce0300ad7137fcc9844ce8d563_l-5269572-images-thumbs&n=13" alt="Изображение 3">
+            <div class="link-row">
+                <a href="https://example.com" target="_blank">Добавить новый сайт</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <div class="frame">
+            <img src="https://cdn1.ozone.ru/s3/multimedia-1-o/7031981544.jpg " alt="Изображение 4">
+            <div class="link-row">
+                <a href="https://youtu.be/Ce2EMjjKKM8?si=PIhgfNZcX0eGVvKu" target="_blank">see more</a>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="https://m.media-amazon.com/images/I/51NIipW1vGL._AC_SS450_.jpg" alt="Изображение 5">
+            <div class="link-row">
+                <a href="https://youtu.be/eUCLDRtH3p0?si=sqi7nM7p07YFzM4_" target="_blank">see more</a>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="https://kikoandbeauty.com/cdn/shop/products/better-than-palette_1200x1200.jpg?v=1665488746" alt="Изображение 6">
+            <div class="link-row">
+                <a href="https://youtu.be/rf_ASnpufZM?si=Oblu83ssqGEeD8A7" target="_blank">see more</a>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="https://avatars.mds.yandex.net/i?id=67dab09a79df1f8e732c933ff7535eaf_l-5714832-images-thumbs&n=13" alt="Изображение 7">
+            <div class="link-row">
+                <a href="https://youtu.be/Ce2EMjjKKM8?si=DtoN4zqOHHDigb6l" target="_blank">see more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Пагинация -->
+    <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" class="arrow">Далее →</a>
+    </div>
+</body>
+</html>
